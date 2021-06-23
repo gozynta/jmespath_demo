@@ -7,9 +7,10 @@ verify_ssl = true
 python_version = "3.9"
 
 [packages]
+PyYAML = "*"
+jmespath = "*"
 
 [dev-packages]
-PyYAML = "*"
 black = "==21.6b0"
 coverage = "*"
 flake8 = "*"

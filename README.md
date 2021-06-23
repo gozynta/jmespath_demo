@@ -1,14 +1,17 @@
-# Boilerplate for New Projects
+# JMESPath Python Kubernetes Yaml Example
 
 ## Overview
-A boilerplate Python 3 project set up for unit tests and continuous integration.
+Finding no good jsonpath libraries for Python, this is the best method I've found so far of manipulating kubernetes yamls (or any other data structure represented as nested dicts/lists).
 
-Specifically:
+<insert link to blog post here>
 
-- Enforces Python style rules with black and flake8
-- Sorts imports with isort
-- Configures VSCode to use black, flake8, and isort from the pipenv
-- git pre-commit hook to check code standards before commits are created
+## Usage
+Take a look at the code under pysrc/.
+
+If you want to run the tests, use
+```bash
+PYTHONPATH=pysrc pipenv run pytest pytests
+```
 
 ## Dev Prerequisites
 - python 3.9
@@ -20,20 +23,4 @@ Specifically:
 ```bash
 pipenv install -d
 ./dev-scripts/install
-```
-
-## Usage for a new project
-
-1. Clone this repo.  Rename the `origin` remote to `boilerplate`, and make your new Gitlab project your origin.
-2. Rename pysrc/fizzbuzz.py to suit your project and start coding/testing
-3. Consider removing Pipfile.lock from the .gitignore
-4. Update this file
-5. Push to a new Gitlab project
-6. Later, when there are updates to this project you can pull changes from the `boilerplate` remote to get the updates.
-   - There will surely be merge conflicts, especially if this file has changed, but I think this will be an ok process overall for keeping these base files up to date?
-
-## Run
-
-```bash
-pipenv run ./pysrc/fizzbuzz.py
 ```
