@@ -3,7 +3,7 @@
 ## Overview
 Finding no good jsonpath libraries for Python, this is the best method I've found so far of manipulating kubernetes yamls (or any other data structure represented as nested dicts/lists).
 
-<insert link to blog post here>
+See the [blog post I wrote on this topic](https://www.gozynta.com/blog/posts/yaml-json-python-jsonpath-jmespath/).
 
 ## Usage
 Take a look at the code under pysrc/.
